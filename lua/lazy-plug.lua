@@ -27,6 +27,10 @@ require("lazy").setup({
     -- automatically check for plugin updates
     enabled = true,
   },
+  install = {
+    -- try to load one of these colorschemes when starting an installation during startup
+    colorscheme = { "tokyonight-night" },
+  },
   performance = {
     rtp = {
       ---@type string[] list any plugins you want to disable here
