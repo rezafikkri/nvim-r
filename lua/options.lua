@@ -2,6 +2,9 @@ vim.opt.clipboard = 'unnamedplus'                       -- use system clipboard
 vim.opt.completeopt = {'menu', 'menuone', 'noselect'}   -- for completion (cmp)
 vim.opt.fileencoding = "utf-8"                          -- the encoding written to a file
 vim.opt.mouse = 'a'                                     -- allow the mouse to be used in Nvim
+vim.opt.timeoutlen = 300                                -- Length of time to wait for a mapped sequence
+vim.opt.undofile = true                                 -- Enable persistent undo
+vim.opt.swapfile = false                                -- Disable use of swapfile for the buffer
 
 -- UI config
 vim.opt.number = true                                   -- set numbered lines

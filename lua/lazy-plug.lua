@@ -27,6 +27,11 @@ require("lazy").setup({
     -- automatically check for plugin updates
     enabled = true,
   },
+  change_detection = {
+    -- automatically check for config file changes and reload the ui
+    enabled = false,
+    notify = false, -- get a notification when changes are found
+  },
   install = {
     -- try to load one of these colorschemes when starting an installation during startup
     colorscheme = { "tokyonight-night" },
