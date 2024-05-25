@@ -5,6 +5,7 @@ vim.opt.mouse = 'a'                                     -- allow the mouse to be
 vim.opt.timeoutlen = 300                                -- Length of time to wait for a mapped sequence
 vim.opt.undofile = true                                 -- Enable persistent undo
 vim.opt.swapfile = false                                -- Disable use of swapfile for the buffer
+vim.opt.writebackup = false                             -- Disable making a backup before overwriting a file
 
 -- UI config
 vim.opt.number = true                                   -- set numbered lines
