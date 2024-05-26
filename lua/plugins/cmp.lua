@@ -76,8 +76,8 @@ return {
       },
       -- Set source precedence
       sources = cmp.config.sources({
-        {name = 'path'},
         {name = 'nvim_lsp'},
+        {name = 'path'},
         {name = 'buffer'},
         {name = 'luasnip'},
       }),
@@ -91,7 +91,7 @@ return {
         -- abbr: abbreviation of "word"; when not empty it is used in the menu instead of "word"
         -- menu: extra text for the popup menu, displayed after "word" or "abbr"
         fields = { "kind", "abbr", "menu" },
-    
+
         -- customize the appearance of the completion menu
         format = function(entry, vim_item)
           vim_item.kind = string.format("%s", kind_icons[vim_item.kind])

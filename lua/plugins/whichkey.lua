@@ -39,6 +39,14 @@ return {
       w = { "<cmd>w!<cr>", "󰆓 Save" },
       q = { "<cmd>q!<cr>", "󰿅 Quit" },
       h = { "<cmd>nohlsearch<cr>", "󱪿 No Highlight" },
+
+      l = {
+        name = "  LSP",
+        i = { "<cmd>LspInfo<cr>", "Info" },
+        I = { "<cmd>Mason<cr>", "Installer Info" },
+        j = { "<cmd>lua vim.diagnostic.goto_prev()<cr>", "Next Diagnostic" },
+        k = { "<cmd>lua vim.diagnostic.goto_prev()<cr>", "Prev Diagnostic" },
+      },
     }, { prefix = "<leader>" })
   end
 }
