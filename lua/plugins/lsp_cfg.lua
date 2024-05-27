@@ -21,6 +21,9 @@ return {
       "LspUninstall",
     },
     config = function()
+      -- add border for lsp ui (ex. when run :LspInfo command)
+      require("lspconfig.ui.windows").default_options.border = "rounded"
+
       require("mason-lspconfig").setup({
         -- A list of servers to automatically install if they're not already installed
         ensure_installed = { 'lua_ls' },
