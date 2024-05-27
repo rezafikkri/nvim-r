@@ -56,7 +56,6 @@ end
 
 return {
   'nvim-lualine/lualine.nvim',
-  dependencies = { 'nvim-tree/nvim-web-devicons' }, -- for file type icons
   event = { "InsertEnter", "BufRead", "BufNewFile" },
   config = function ()
     require("lualine").setup {
