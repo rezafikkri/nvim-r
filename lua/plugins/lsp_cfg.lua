@@ -10,7 +10,6 @@ local icons = {
   BoldHint = "",
   Hint = "󰌶",
 }
-
 return {
   {
     "neovim/nvim-lspconfig",
@@ -21,32 +20,6 @@ return {
       "LspInstall",
       "LspUninstall",
     },
-    init = function()
-      local sign = function(opts)
-        -- See :help sign_define()
-        vim.fn.sign_define(opts.name, {
-          texthl = opts.name,
-          text = opts.text,
-          numhl = ''
-        })
-      end
-
-      sign({name = 'DiagnosticSignError', text = icons.Error})
-      sign({name = 'DiagnosticSignWarn', text = icons.Warning})
-      sign({name = 'DiagnosticSignHint', text = icons.Hint})
-      sign({name = 'DiagnosticSignInfo', text = icons.Information})
-
-      -- See :help vim.diagnostic.config()
-      vim.diagnostic.config({
-        virtual_text = false,
-        severity_sort = true,
-        update_in_insert = true,
-        float = {
-          border = 'rounded',
-          source = 'always',
-        },
-      })
-    end,
     config = function()
       require("mason-lspconfig").setup({
         -- A list of servers to automatically install if they're not already installed

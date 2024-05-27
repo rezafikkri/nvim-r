@@ -47,6 +47,19 @@ return {
         j = { "<cmd>lua vim.diagnostic.goto_prev()<cr>", "Next Diagnostic" },
         k = { "<cmd>lua vim.diagnostic.goto_prev()<cr>", "Prev Diagnostic" },
       },
+
+      z = {
+        name = " 󱑠 Plugins(Lazy)",
+        h = { "<cmd>Lazy home<cr>", "List" },
+        i = { "<cmd>Lazy install<cr>", "Install" },
+        s = { "<cmd>Lazy sync<cr>", "Sync" },
+        S = { "<cmd>Lazy clear<cr>", "Status" },
+        c = { "<cmd>Lazy clean<cr>", "Clean" },
+        u = { "<cmd>Lazy update<cr>", "Update" },
+        p = { "<cmd>Lazy profile<cr>", "Profile" },
+        l = { "<cmd>Lazy log<cr>", "Log" },
+        d = { "<cmd>Lazy debug<cr>", "Debug" },
+      },
     }, { prefix = "<leader>" })
   end
 }
