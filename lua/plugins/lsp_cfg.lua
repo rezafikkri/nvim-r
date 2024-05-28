@@ -1,15 +1,10 @@
 local icons = {
-  BoldError = "",
   Error = "",
-  BoldWarning = "",
   Warning = "",
-  BoldInformation = "",
   Information = "",
-  BoldQuestion = "",
-  Question = "",
-  BoldHint = "",
   Hint = "󰌶",
 }
+
 return {
   {
     "neovim/nvim-lspconfig",
@@ -21,7 +16,31 @@ return {
       "LspUninstall",
     },
     config = function()
-      -- add border for lsp ui (ex. when run :LspInfo command)
+      local sign = function(opts)
+        -- See :help sign_define()
+        vim.fn.sign_define(opts.name, {
+          texthl = opts.name,
+          text = opts.text,
+          numhl = ''
+        })
+      end
+
+      sign({name = 'DiagnosticSignError', text = icons.Error})
+      sign({name = 'DiagnosticSignWarn', text = icons.Warning})
+      sign({name = 'DiagnosticSignHint', text = icons.Hint})
+      sign({name = 'DiagnosticSignInfo', text = icons.Information})
+
+      -- See :help vim.diagnostic.config()
+      vim.diagnostic.config({
+        virtual_text = false,
+        severity_sort = true,
+        float = {
+          border = 'rounded',
+          source = 'always',
+        },
+      })
+
+      -- Add border to lspconfig ui (ex. when run :LspInfo command)
       require("lspconfig.ui.windows").default_options.border = "rounded"
 
       require("mason-lspconfig").setup({

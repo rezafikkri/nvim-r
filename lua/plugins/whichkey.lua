@@ -36,16 +36,17 @@ return {
 
     -- Register mappings
     which_key.register({
-      w = { "<cmd>w!<cr>", "󰆓 Save" },
-      q = { "<cmd>q!<cr>", "󰿅 Quit" },
+      w = { "<cmd>w<cr>", "󰆓 Save" },
+      q = { "<cmd>q<cr>", "󰿅 Quit" },
       h = { "<cmd>nohlsearch<cr>", "󱪿 No Highlight" },
 
       l = {
         name = "  LSP",
         i = { "<cmd>LspInfo<cr>", "Info" },
         I = { "<cmd>Mason<cr>", "Installer Info" },
-        j = { "<cmd>lua vim.diagnostic.goto_prev()<cr>", "Next Diagnostic" },
+        j = { "<cmd>lua vim.diagnostic.goto_next()<cr>", "Next Diagnostic" },
         k = { "<cmd>lua vim.diagnostic.goto_prev()<cr>", "Prev Diagnostic" },
+        t = { "<cmd>DiagnosticsToggle<cr>", "Toggle Diagnostic" },
       },
 
       z = {

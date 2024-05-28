@@ -1,4 +1,5 @@
 require('options')
+require('commands')
 require('keymaps')
 require('lazy-plug')
 require('ui')
