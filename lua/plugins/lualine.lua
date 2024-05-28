@@ -12,6 +12,7 @@ local icons = {
     BoldError = "",
 		BoldWarning = "",
 		BoldInformation = "",
+    BoldHint = "",
   },
 }
 
@@ -99,11 +100,13 @@ return {
           {
             "diagnostics",
             sources = { "nvim_diagnostic" },
-            sections = { "error", "warn", "info" },
+            -- Displays diagnostics for the defined severity types
+            sections = { 'error', 'warn', 'info', 'hint' },
             symbols = {
               error = icons.diagnostics.BoldError .. " ",
               warn = icons.diagnostics.BoldWarning .. " ",
               info = icons.diagnostics.BoldInformation .. " ",
+              hint = icons.diagnostics.BoldHint .. " ",
             },
           },
           lsp_info,
