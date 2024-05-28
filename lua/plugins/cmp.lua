@@ -62,10 +62,12 @@ return {
     -- Use existing VS Code style snippets from a plugin (ex. rafamadriz/friendly-snippets)
     require('luasnip.loaders.from_vscode').lazy_load()
 
-    local check_backspace = function()
-      local col = vim.fn.col(".") - 1
-      return col == 0 or vim.fn.getline("."):sub(col, col):match("%s")
-    end
+    -- Add keymap for unlink current jumpable luasnip
+    vim.api.nvim_set_keymap('i', "<C-l>", "<cmd>lua require('luasnip').unlink_current()<cr>", {
+      noremap = true,
+      silent = true,
+      desc = "Removes current snippet from jumplist",
+    })
 
     cmp.setup {
       snippet = {
