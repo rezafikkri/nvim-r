@@ -40,6 +40,14 @@ return {
       q = { "<cmd>q<cr>", "󰿅 Quit" },
       h = { "<cmd>nohlsearch<cr>", "󱪿 No Highlight" },
       e = { "<cmd>NvimTreeToggle<cr>", "󰙅 Explorer" },
+      c = { "<cmd>Bdelete<cr>", "󰛉 Close current buffer" },
+
+      b = {
+        name = "  Buffers",
+        a = { ":bufdo :Bdelete<cr>", "Close all buffers" },
+        n = { "<cmd>BufferLineMoveNext<cr>", "Move current buffer to next" },
+        p = { "<cmd>BufferLineMovePrev<cr>", "Move current buffer to prev" },
+      },
 
       l = {
         name = "  LSP",
