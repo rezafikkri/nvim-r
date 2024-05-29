@@ -41,6 +41,10 @@ return {
       h = { "<cmd>nohlsearch<cr>", "󱪿 No Highlight" },
       e = { "<cmd>NvimTreeToggle<cr>", "󰙅 Explorer" },
       c = { "<cmd>Bdelete<cr>", "󰛉 Close current buffer" },
+      n = {
+        "<cmd>lua require('notify').dismiss({ silent = true, pending = true })<cr>",
+        "Delete all notifications",
+      },
 
       b = {
         name = "  Buffers",
