@@ -39,6 +39,7 @@ return {
       w = { "<cmd>w<cr>", "󰆓 Save" },
       q = { "<cmd>q<cr>", "󰿅 Quit" },
       h = { "<cmd>nohlsearch<cr>", "󱪿 No Highlight" },
+      e = { "<cmd>NvimTreeToggle<cr>", "󰙅 Explorer" },
 
       l = {
         name = "  LSP",

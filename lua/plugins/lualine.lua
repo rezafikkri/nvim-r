@@ -62,7 +62,6 @@ return {
     require("lualine").setup {
       options = {
         theme = "tokyonight",
-        globalstatus = true, -- for make only have a single statusline at bottom of neovim
         disabled_filetypes = { -- Filetypes to disable lualine for.
           "TelescopePrompt",
           "alpha",

@@ -10,6 +10,10 @@ return {
           bold = true,
           fg = "#6772A2"
         }
+        hl.NvimTreeFolderIcon = {
+          bg = c.none,
+          fg = c.yellow,
+        }
       end
     })
   end
