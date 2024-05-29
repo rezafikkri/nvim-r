@@ -41,6 +41,18 @@ local spaces = {
   end,
 }
 
+-- Get diff source from gitsigns
+local function diff_source()
+  local gitsigns = vim.b.gitsigns_status_dict
+  if gitsigns then
+    return {
+      added = gitsigns.added,
+      modified = gitsigns.changed,
+      removed = gitsigns.removed,
+    }
+  end
+end
+
 -- lualine_a separator
 local la_separator = { left = "" }
 local is_cwd_git_repo = function ()
@@ -57,7 +69,7 @@ end
 
 return {
   'nvim-lualine/lualine.nvim',
-  event = { "InsertEnter", "BufRead", "BufNewFile" },
+  event = { "BufReadPre", "BufNewFile" },
   config = function ()
     require("lualine").setup {
       options = {
@@ -88,6 +100,7 @@ return {
         lualine_c = {
           {
             "diff",
+            source = diff_source,
             symbols = {
               added = icons.git.LineAdded .. " ",
               modified = icons.git.LineModified .. " ",
