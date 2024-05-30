@@ -1,18 +1,12 @@
 local icons = {
   git = {
     FileDeleted = "",
-		FileIgnored = "",
-		FileRenamed = "",
-		FileStaged = "S",
-		FileUnmerged = "",
-		FileUnstaged = "",
-		FileUntracked = "U",
-  },
-  diagnostics = {
-    BoldError = "",
-		BoldWarning = "",
-		BoldInformation = "",
-    BoldHint = "",
+    FileIgnored = "",
+    FileRenamed = "",
+    FileStaged = "S",
+    FileUnmerged = "",
+    FileUnstaged = "",
+    FileUntracked = "U",
   },
 }
 
@@ -20,11 +14,27 @@ return {
   "nvim-tree/nvim-tree.lua",
   cmd = { 'NvimTreeToggle' },
   config = function ()
+    local function my_on_attach(bufnr)
+      local api = require "nvim-tree.api"
+
+      local function opts(desc)
+        return { desc = "nvim-tree: " .. desc, buffer = bufnr, noremap = true, silent = true, nowait = true }
+      end
+
+      -- default mappings
+      api.config.mappings.default_on_attach(bufnr)
+
+      -- custom mappings
+      vim.keymap.set('n', 'd', api.fs.trash, opts('Trash'))
+      vim.keymap.set('n', 'D', api.fs.remove, opts('Delete'))
+    end
+
     -- disable netrw at the very start of your init.lua
     vim.g.loaded_netrw = 1
     vim.g.loaded_netrwPlugin = 1
 
     require("nvim-tree").setup {
+      on_attach = my_on_attach,
       renderer = {
         highlight_git = "name",
         root_folder_label = ":t",
