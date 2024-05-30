@@ -36,8 +36,8 @@ keymap("n", "<A-j>", ":m .+1<CR>==", opts('Move text to down'))
 keymap("n", "<A-k>", ":m .-2<CR>==", opts('Move text to up'))
 
 -- Navigate to next and prev buffer
-keymap("n", "\\]", "<cmd>BufferLineCycleNext<cr>", opts('Navigate to next buffer'))
-keymap("n", "\\[", "<cmd>BufferLineCyclePrev<cr>", opts('Navigate to prev buffer'))
+keymap("n", "\\]", "<cmd>bnext<cr>", opts('Navigate to next buffer'))
+keymap("n", "\\[", "<cmd>bprevious<cr>", opts('Navigate to prev buffer'))
 
 -----------------
 -- Visual mode --
