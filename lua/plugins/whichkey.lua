@@ -50,7 +50,7 @@ return {
       c = { "<cmd>Bdelete<cr>", "󰛉 Close current buffer" },
       n = {
         "<cmd>lua require('notify').dismiss({ silent = true, pending = true })<cr>",
-        "Delete all notifications",
+        "󱒼 Delete all notifications",
       },
 
       b = {
@@ -67,6 +67,14 @@ return {
         j = { "<cmd>lua vim.diagnostic.goto_next()<cr>", "Next Diagnostic" },
         k = { "<cmd>lua vim.diagnostic.goto_prev()<cr>", "Prev Diagnostic" },
         t = { "<cmd>DiagnosticsToggle<cr>", "Toggle Diagnostic" },
+        d = {
+          "<cmd>Telescope diagnostics bufnr=0<cr>",
+          "Document Diagnostics",
+        },
+        w = {
+          "<cmd>Telescope diagnostics<cr>",
+          "Workspace Diagnostics",
+        },
       },
 
       z = {
@@ -80,6 +88,12 @@ return {
         l = { "<cmd>Lazy log<cr>", "Log" },
         d = { "<cmd>Lazy debug<cr>", "Debug" },
       },
+
+      f = {
+        name = " 󰭎 Telescope",
+        f = { "<cmd>Telescope find_files<cr>", "Find files" },
+        g = { "<cmd>Telescope live_grep<cr>", "Live grap" },
+      }
     }, { prefix = "<leader>" })
   end
 }
