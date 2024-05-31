@@ -23,6 +23,8 @@ keymap('n', '<C-h>', '<C-w>h', opts('Move the cursor to left window'))
 keymap('n', '<C-j>', '<C-w>j', opts('Move the cursor to bottom window'))
 keymap('n', '<C-k>', '<C-w>k', opts('Move the cursor to top window'))
 keymap('n', '<C-l>', '<C-w>l', opts('Move the cursor to right window'))
+-- This for open terminal first time, because toggleterm only load after execute ToggleTerm cmd etc.
+keymap("n", "<c-\\>", "<cmd>ToggleTerm<cr>", opts("Open terminal"));
 
 -- Resize with arrows
 -- delta: 2 lines
