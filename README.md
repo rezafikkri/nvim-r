@@ -1,6 +1,6 @@
 <h1 align="center">Nvim R</h1>
 
-<div align="center">
+<div align="center" style="margin-bottom: 10px">
   <img alt="Neovim" src="https://img.shields.io/badge/NeoVim-%2357A143.svg?&style=for-the-badge&logo=neovim&logoColor=white"/>
   <img alt="Lua" src="https://img.shields.io/badge/lua-%232C2D72.svg?style=for-the-badge&logo=lua&logoColor=white"/>
   <a href="https://github.com/rezafikkri/Nvim-R">
@@ -8,8 +8,9 @@
   </a>
 </div>
 
-![dashboard!](img/nvim-r2.png)
-![home!](img/nvim-r1.png)
+### Demo
+<img alt="dashboard" src="img/nvim-r2.png"/>
+<img alt="home" src="img/nvim-r1.png"/>
 
 ## Requirements
 1. Neovim >= [v0.10.0](https://github.com/neovim/neovim/releases/latest)
