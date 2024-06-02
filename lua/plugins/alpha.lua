@@ -15,6 +15,14 @@ return {
       "█▄█ ▄ █▄▄█▄▄█ █ ▄▄█ █ ▄ █ █▄█▄█ █",
       "    █▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█ █▄█▄▄▄█    ",
     }
+    -- dashboard.section.header.val = {
+    --   [[  _______       .__                 __________  ]],
+    --   [[  \      \___  _|__| _____          \______   \ ]],
+    --   [[  /   |   \  \/ /  |/     \   ______ |       _/ ]],
+    --   [[ /    |    \   /|  |  Y Y  \ /_____/ |    |   \ ]],
+    --   [[ \____|__  /\_/ |__|__|_|  /         |____|_  / ]],
+    --   [[         \/              \/                 \/  ]],
+    -- }
     dashboard.section.buttons.val = {
       dashboard.button("f", "󰭎  Find file", ":Telescope find_files <CR>"),
       dashboard.button("t", "󱎸  Find text", ":Telescope live_grep <CR>"),
