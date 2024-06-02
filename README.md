@@ -1,9 +1,12 @@
-# Nvim R
-![Neovim](https://img.shields.io/badge/NeoVim-%2357A143.svg?&style=for-the-badge&logo=neovim&logoColor=white)
-![Lua](https://img.shields.io/badge/lua-%232C2D72.svg?style=for-the-badge&logo=lua&logoColor=white)
-<a href="https://github.com/rezafikkri/Nvim-R">
-  <img alt="Repo Size" src="https://img.shields.io/github/repo-size/rezafikkri/Nvim-R?color=%23DDB6F2&label=SIZE&logo=codesandbox&style=for-the-badge&logoColor=D9E0EE&labelColor=302D41" />
-</a>
+<h1 align="center">Nvim R</h1>
+
+<div align="center">
+  <img alt="Neovim" src="https://img.shields.io/badge/NeoVim-%2357A143.svg?&style=for-the-badge&logo=neovim&logoColor=white"/>
+  <img alt="Lua" src="https://img.shields.io/badge/lua-%232C2D72.svg?style=for-the-badge&logo=lua&logoColor=white"/>
+  <a href="https://github.com/rezafikkri/Nvim-R">
+    <img alt="Repo Size" src="https://img.shields.io/github/repo-size/rezafikkri/Nvim-R?color=%23DDB6F2&label=SIZE&logo=codesandbox&style=for-the-badge&logoColor=D9E0EE&labelColor=302D41" />
+  </a>
+</div>
 
 ![dashboard!](img/nvim-r2.png)
 ![home!](img/nvim-r1.png)
