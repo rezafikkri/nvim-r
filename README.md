@@ -47,6 +47,7 @@ Info:
 - `<C>` is Ctrl, so if `<C-a>` then `Ctrl+a`
 - `<S>` is Shift, so if `<S-a>` then `Shift+a`
 - `<A>` is Alt, so if `<A-a>` then `Alt+a`
+- To show general keymaps, press `<leader>` (show up after 300ms)
 
 ### Window
 <table>
@@ -128,10 +129,72 @@ Tip:
     <td>Move text to down</td>
     <td>Normal, Visual</td>
   </tr>
-  
   <tr>
     <td><code>&lt;A-k&gt</code></td>
     <td>Move text to up</td>
     <td>Normal, Visual</td>
   </tr>
+  <tr>
+    <td><code>\]</code></td>
+    <td>Navigate to next buffer</td>
+    <td>Normal</td>
+  </tr>
+  <tr>
+    <td><code>\[</code></td>
+    <td>Navigate to prev buffer</td>
+    <td>Normal</td>
+  </tr>
+  <tr>
+    <td><code>&lt;Tab&gt</code></td>
+    <td>Increase indentation repeatedly</td>
+    <td>Visual</td>
+  </tr>
+  <tr>
+    <td><code>&lt;S-Tab&gt</code></td>
+    <td>Decrease indentation repeatedly</td>
+    <td>Visual</td>
+  </tr>
+  <tr>
+    <td><code>&lt;leader&gt;c</code></td>
+    <td>Close current buffer</td>
+    <td>Normal</td>
+  </tr>
+  <tr>
+    <td><code>&lt;leader&gt;h</code></td>
+    <td>Clear highlight (ex. highlight after search)</td>
+    <td>Normal</td>
+  </tr>
 </table>
+
+## Exproler
+<table>
+  <tr>
+    <th>Key</th>
+    <th>Description</th>
+    <th>Mode</th>
+  </tr>
+  <tr>
+    <td><code>&lt;leader&gt;e</code></td>
+    <td>Toggle side file explorer</td>
+    <td>Normal</td>
+  </tr>
+  <tr>
+    <td><code>&lt;leader&gt;a</code></td>
+    <td>Add new file</td>
+    <td>In file explorer window</td>
+  </tr>
+  <tr>
+    <td><code>&lt;leader&gt;d</code></td>
+    <td>Trash file</td>
+    <td>In file explorer window</td>
+  </tr>
+  <tr>
+    <td><code>&lt;leader&gt;D</code></td>
+    <td>Delete file</td>
+    <td>In file explorer window</td>
+  </tr>
+</table>
+
+Info:
+- To see more keymaps for explorer, press `g?`, to back explorer again, press `q`
+- Different of *trash* dan *delete* in above keymaps: *trash* is move file or folder to trash (so, file or older can be restore), while *delete* is delete file or folder permanently
