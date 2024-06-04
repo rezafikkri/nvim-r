@@ -135,16 +135,6 @@ Tip:
     <td>Normal, Visual</td>
   </tr>
   <tr>
-    <td><code>\]</code></td>
-    <td>Navigate to next buffer</td>
-    <td>Normal</td>
-  </tr>
-  <tr>
-    <td><code>\[</code></td>
-    <td>Navigate to prev buffer</td>
-    <td>Normal</td>
-  </tr>
-  <tr>
     <td><code>&lt;Tab&gt</code></td>
     <td>Increase indentation repeatedly</td>
     <td>Visual</td>
@@ -153,11 +143,6 @@ Tip:
     <td><code>&lt;S-Tab&gt</code></td>
     <td>Decrease indentation repeatedly</td>
     <td>Visual</td>
-  </tr>
-  <tr>
-    <td><code>&lt;leader&gt;c</code></td>
-    <td>Close current buffer</td>
-    <td>Normal</td>
   </tr>
   <tr>
     <td><code>&lt;leader&gt;h</code></td>
@@ -221,3 +206,42 @@ Info:
 Info:
 - For more keymaps in lazygit, see [here](https://github.com/jesseduffield/lazygit/blob/master/docs/keybindings)
 - ex. For close lazygit: if you have press `a` then `c` for commit, and want to cancel, you can press `<Esc>` first and than press `q` for close lazygit
+
+### Buffers
+<table>
+  <tr>
+    <th>Key</th>
+    <th>Description</th>
+    <th>Mode</th>
+  </tr>
+  <tr>
+    <td><code>&lt;leader&gt;c</code></td>
+    <td>Close current buffer</td>
+    <td>Normal</td>
+  </tr>
+    <tr>
+    <td><code>\]</code></td>
+    <td>Navigate to next buffer</td>
+    <td>Normal</td>
+  </tr>
+  <tr>
+    <td><code>\[</code></td>
+    <td>Navigate to prev buffer</td>
+    <td>Normal</td>
+  </tr>
+  <tr>
+    <td><code>&lt;leader&gt;ba</code></td>
+    <td>Close all buffers</td>
+    <td>Normal</td>
+  </tr>
+  <tr>
+    <td><code>&lt;leader&gt;bn</code></td>
+    <td>Move current buffer to next</td>
+    <td>Normal</td>
+  </tr>
+  <tr>
+    <td><code>&lt;leader&gt;bp</code></td>
+    <td>Move current buffer to prev</td>
+    <td>Normal</td>
+  </tr>
+</table>
