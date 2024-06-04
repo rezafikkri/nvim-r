@@ -166,7 +166,7 @@ Tip:
   </tr>
 </table>
 
-## Exproler
+### Exproler
 <table>
   <tr>
     <th>Key</th>
@@ -198,3 +198,26 @@ Tip:
 Info:
 - To see more keymaps for explorer, press `g?`, to back explorer again, press `q`
 - Different of *trash* dan *delete* in above keymaps: *trash* is move file or folder to trash (so, file or older can be restore), while *delete* is delete file or folder permanently
+
+### Lazygit
+<table>
+  <tr>
+    <th>Key</th>
+    <th>Description</th>
+    <th>Mode</th>
+  </tr>
+  <tr>
+    <td><code>&lt;leader&gt;g</code></td>
+    <td>Open lazygit</td>
+    <td>Normal</td>
+  </tr>
+  <tr>
+    <td><code>q</code></td>
+    <td>Close lazygit</td>
+    <td>In lazygit window</td>
+  </tr>
+</table>
+
+Info:
+- For more keymaps in lazygit, see [here](https://github.com/jesseduffield/lazygit/blob/master/docs/keybindings)
+- ex. For close lazygit: if you have press `a` then `c` for commit, and want to cancel, you can press `<Esc>` first and than press `q` for close lazygit
