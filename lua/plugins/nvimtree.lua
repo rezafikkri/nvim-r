@@ -12,7 +12,7 @@ local icons = {
 
 return {
   "nvim-tree/nvim-tree.lua",
-  cmd = { 'NvimTreeToggle' },
+  event = "VeryLazy",
   config = function ()
     local function my_on_attach(bufnr)
       local api = require "nvim-tree.api"

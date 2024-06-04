@@ -56,7 +56,7 @@ return {
       c = { "<cmd>Bdelete<cr>", "󰛉 Close current buffer" },
       n = {
         "<cmd>lua require('notify').dismiss({ silent = true, pending = true })<cr>",
-        "󱒼 Delete all notifications",
+        "󱒼 Close all notifications",
       },
       g = { "<cmd>lua _lazygit_toggle()<CR>", " Lazygit" },
 
