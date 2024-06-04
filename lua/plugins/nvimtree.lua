@@ -12,7 +12,9 @@ local icons = {
 
 return {
   "nvim-tree/nvim-tree.lua",
-  event = "VeryLazy",
+  -- event = "VeryLazy",
+  lazy = true,
+  cmd = { "NvimTreeFindFileToggle", "NvimTree", "NvimTreeOpen", "NvimTreeToggle", "NvimTreeFocus", "NvimTreeClose" },
   config = function ()
     local function my_on_attach(bufnr)
       local api = require "nvim-tree.api"

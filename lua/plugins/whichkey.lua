@@ -59,6 +59,12 @@ return {
         "󱒼 Close all notifications",
       },
       g = { "<cmd>lua _lazygit_toggle()<CR>", " Lazygit" },
+      t = {
+        function()
+          require("Comment.api").toggle.linewise.current()
+        end,
+        "󰆄 Coment line",
+      },
 
       b = {
         name = "  Buffers",
