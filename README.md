@@ -47,6 +47,9 @@ rm -rf ~/.config/nvim
 rm -rf ~/.local/share/nvim
 ```
 
+## Configuration
+This is simple, you can directly edit config that you have clone. If you have a question or problem, you can create issue, but before it, make sure you have search related issue.
+
 ## Keymaps
 Info:
 - `<leader>` is space
