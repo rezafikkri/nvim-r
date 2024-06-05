@@ -41,6 +41,12 @@ rm -rf ~/.config/nvim/.git
 nvim
 ```
 
+### Uninstall
+```bash
+rm -rf ~/.config/nvim
+rm -rf ~/.local/share/nvim
+```
+
 ## Keymaps
 Info:
 - `<leader>` is space
