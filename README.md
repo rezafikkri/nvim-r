@@ -59,198 +59,64 @@ Info:
 - To show general keymaps, press `<leader>` (show up after 300ms)
 
 ### Window
-<table>
-  <tr>
-    <th>Key</th>
-    <th>Description</th>
-    <th>Mode</th>
-  </tr>
-  <tr>
-    <td><code>&lt;C-h&gt</code></td>
-    <td>Move the cursor to left window</td>
-    <td>Normal</td>
-  </tr>
-  <tr>
-    <td><code>&lt;C-j&gt</code></td>
-    <td>Move the cursor to bottom window</td>
-    <td>Normal</td>
-  </tr>
-  <tr>
-    <td><code>&lt;C-k&gt</code></td>
-    <td>Move the cursor to top window</td>
-    <td>Normal</td>
-  </tr>
-  <tr>
-    <td><code>&lt;C-l&gt</code></td>
-    <td>Move the cursor to right window</td>
-    <td>Normal</td>
-  </tr>
-
-  <tr>
-    <td><code>&lt;C-Up&gt</code></td>
-    <td>Decrease window size (horizontal)</td>
-    <td>Normal</td>
-  </tr>
-  <tr>
-    <td><code>&lt;C-Down&gt</code></td>
-    <td>Increase window size (horizontal)</td>
-    <td>Normal</td>
-  </tr>
-  <tr>
-    <td><code>&lt;C-Left&gt</code></td>
-    <td>Descrease window size (vertical)</td>
-    <td>Normal</td>
-  </tr>
-  <tr>
-    <td><code>&lt;C-Right&gt</code></td>
-    <td>Increase window size (vertical)</td>
-    <td>Normal</td>
-  </tr>
-</table>
+| Key | Description | Mode |
+| --- | --- | --- |
+| `<C-h>` | Move the cursor to left window | Normal |
+| `<C-j>` | Move the cursor to bottom window | Normal |
+| `<C-k>` | Move the cursor to top window | Normal |
+| `<C-l>` | Move the cursor to right window | Normal |
+| `<C-Up>` | Decrease window size (horizontal) | Normal |
+| `<C-Down>` | Increase window size (horizontal) | Normal |
+| `<C-Left>` | Descrease window size (vertical) | Normal |
+| `<C-Right>` | Increase window size (vertical) | Normal |
 
 ### Terminal
-<table>
-  <tr>
-    <th>Key</th>
-    <th>Description</th>
-    <th>Mode</th>
-  </tr>
-  <tr>
-    <td><code>&lt;C-\&gt</code></td>
-    <td>Toggle (last) float terminal</td>
-    <td>Normal, Terminal</td>
-  </tr>
-</table>
+| Key | Description | Mode |
+| --- | --- | --- |
+| `<C-\>` | Toggle (last) float terminal | Normal, Terminal |
 
 Tip:
 - Open multiple terminal: `[num] <C-\>` (in normal mode), ex. `1 <C-\>` for open first terminal, `2 <C-\>` for open second terminal, etc.
 - If you has open second terminal and want to back first terminal, simple, press `1 <C-\>` again (in normal mode).
 
 ### Editing
-<table>
-  <tr>
-    <th>Key</th>
-    <th>Description</th>
-    <th>Mode</th>
-  </tr>
-  <tr>
-    <td><code>&lt;A-j&gt</code></td>
-    <td>Move text to down</td>
-    <td>Normal, Visual</td>
-  </tr>
-  <tr>
-    <td><code>&lt;A-k&gt</code></td>
-    <td>Move text to up</td>
-    <td>Normal, Visual</td>
-  </tr>
-  <tr>
-    <td><code>&lt;Tab&gt</code></td>
-    <td>Increase indentation repeatedly</td>
-    <td>Visual</td>
-  </tr>
-  <tr>
-    <td><code>&lt;S-Tab&gt</code></td>
-    <td>Decrease indentation repeatedly</td>
-    <td>Visual</td>
-  </tr>
-  <tr>
-    <td><code>&lt;leader&gt;h</code></td>
-    <td>Clear highlight (ex. highlight after search)</td>
-    <td>Normal</td>
-  </tr>
-</table>
+| Key | Description | Mode |
+| --- | --- | --- |
+| `<A-j>` | Move text to down | Normal, Visual |
+| `<A-k>` | Move text to up | Normal, Visual |
+| `<Tab>` | Increase indentation repeatedly | Visual |
+| `<S-Tab>` | Decrease indentation repeatedly | Visual |
+| `<leader>h` | Clear highlight (ex. highlight after search) | Normal |
+| `<leader>t` | Comment line | Normal |
 
 ### Exproler
-<table>
-  <tr>
-    <th>Key</th>
-    <th>Description</th>
-    <th>Mode</th>
-  </tr>
-  <tr>
-    <td><code>&lt;leader&gt;e</code></td>
-    <td>Toggle side file explorer</td>
-    <td>Normal</td>
-  </tr>
-  <tr>
-    <td><code>&lt;leader&gt;a</code></td>
-    <td>Add new file</td>
-    <td>In file explorer window</td>
-  </tr>
-  <tr>
-    <td><code>&lt;leader&gt;d</code></td>
-    <td>Trash file</td>
-    <td>In file explorer window</td>
-  </tr>
-  <tr>
-    <td><code>&lt;leader&gt;D</code></td>
-    <td>Delete file</td>
-    <td>In file explorer window</td>
-  </tr>
-</table>
+| Key | Description | Mode |
+| --- | --- | --- |
+| `<leader>e` | Toggle side file explorer | Normal |
+| `<leader>a` | Add new file | In file explorer window |
+| `<leader>d` | Trash file | In file explorer window |
+| `<leader>D` | Delete file | In file explorer window |
 
 Info:
 - To see more keymaps for explorer, press `g?`, to back explorer again, press `q`
 - Different of *trash* dan *delete* in above keymaps: *trash* is move file or folder to trash (so, file or older can be restore), while *delete* is delete file or folder permanently
 
 ### Lazygit
-<table>
-  <tr>
-    <th>Key</th>
-    <th>Description</th>
-    <th>Mode</th>
-  </tr>
-  <tr>
-    <td><code>&lt;leader&gt;g</code></td>
-    <td>Open lazygit</td>
-    <td>Normal</td>
-  </tr>
-  <tr>
-    <td><code>q</code></td>
-    <td>Close lazygit</td>
-    <td>In lazygit window</td>
-  </tr>
-</table>
+| Key | Description | Mode |
+| --- | --- | --- |
+| `<leader>g` | Open lazygit | Normal |
+| `q` | Close lazygit | In lazygit window |
 
 Info:
 - For more keymaps in lazygit, see [here](https://github.com/jesseduffield/lazygit/blob/master/docs/keybindings)
 - ex. For close lazygit: if you have press `a` then `c` for commit, and want to cancel, you can press `<Esc>` first and than press `q` for close lazygit
 
 ### Buffers
-<table>
-  <tr>
-    <th>Key</th>
-    <th>Description</th>
-    <th>Mode</th>
-  </tr>
-  <tr>
-    <td><code>&lt;leader&gt;c</code></td>
-    <td>Close current buffer</td>
-    <td>Normal</td>
-  </tr>
-    <tr>
-    <td><code>\]</code></td>
-    <td>Navigate to next buffer</td>
-    <td>Normal</td>
-  </tr>
-  <tr>
-    <td><code>\[</code></td>
-    <td>Navigate to prev buffer</td>
-    <td>Normal</td>
-  </tr>
-  <tr>
-    <td><code>&lt;leader&gt;ba</code></td>
-    <td>Close all buffers</td>
-    <td>Normal</td>
-  </tr>
-  <tr>
-    <td><code>&lt;leader&gt;bn</code></td>
-    <td>Move current buffer to next</td>
-    <td>Normal</td>
-  </tr>
-  <tr>
-    <td><code>&lt;leader&gt;bp</code></td>
-    <td>Move current buffer to prev</td>
-    <td>Normal</td>
-  </tr>
-</table>
+| Key | Description | Mode |
+| --- | --- | --- |
+| `<leader>c` | Close current buffer | Normal |
+| `\]` | Navigate to next buffer | Normal |
+| `\[` | Navigate to prev buffer | Normal |
+| `<leader>ba` | Close all buffers | Normal |
+| `<leader>bn` | Move current buffer to next | Normal |
+| `<leader>bp` | Move current buffer to prev | Normal |
