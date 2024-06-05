@@ -130,3 +130,28 @@ Info:
 Info:
 - For close telescope, press `<C-c>` or press `<Esc>` 2x
 - For more about telescope, see [here](https://github.com/nvim-telescope/telescope.nvim)
+
+### LSP
+| Key | Description | Mode |
+| --- | --- | --- |
+| `<leader>ld` | Document diagnostics (show diagnostics for the current buffer) | Normal |
+| `<leader>lw` | Workspace diagnostics (show diagnostics for the current workspace) | Normal |
+| `<leader>li` | Info (list of active lsp for the current buffer) | Normal |
+| `<leader>lI` | Installer info (open [Mason](https://github.com/williamboman/mason.nvim)) | Normal |
+| `<leader>lj` | Next diagnostic (in current buffer) | Normal |
+| `<leader>lk` | Prev diagnostic (in current buffer) | Normal |
+| `<leader>lt` | Toggle diagnostic (show and hide diagnostic, but in lualine still to show) | Normal |
+
+| Key | Description | Mode |
+| --- | --- | --- |
+| `<leader>zh` | List plugins | Normal |
+| `<leader>zi` | Install plugins | Normal |
+| `<leader>zd` | Show debug informations | Normal |
+| `<leader>zl` | Show recent updates | Normal |
+| `<leader>zp` | Show detailed profiling | Normal |
+| `<leader>zs` | Run install, clean and update | Normal |
+| `<leader>zu` | Update plugins | Normal |
+| `<leader>zx` | Clean plugins that are no longer needed | Normal |
+
+Info:
+- This config using [folke/lazy.nvim](https://github.com/folke/lazy.nvim) plugin manager.
