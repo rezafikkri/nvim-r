@@ -126,3 +126,7 @@ Info:
 | --- | --- | --- |
 | `<leader>ff` | Find files | Normal |
 | `<leader>fg` | Live grap (search for a string in your current working directory and get results live as you type.) | Normal |
+
+Info:
+- For close telescope, press `<C-c>` or press `<Esc>` 2x
+- For more about telescope, see [here](https://github.com/nvim-telescope/telescope.nvim)
