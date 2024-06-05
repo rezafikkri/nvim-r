@@ -8,6 +8,9 @@ vim.opt.swapfile = false                                -- Disable use of swapfi
 vim.opt.writebackup = false                             -- Disable making a backup before overwriting a file
 vim.opt.signcolumn = 'yes'                              -- show sign column
 vim.opt.ruler = false                                   -- Disable ruler (line and column number of the cursor position in cmdline)
+-- disable netrw at the very start of your init.lua
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
 
 -- UI config
 vim.opt.number = true                                   -- set numbered lines

@@ -14,7 +14,7 @@ return {
   "nvim-tree/nvim-tree.lua",
   -- event = "VeryLazy",
   lazy = true,
-  cmd = { "NvimTreeFindFileToggle", "NvimTree", "NvimTreeOpen", "NvimTreeToggle", "NvimTreeFocus", "NvimTreeClose" },
+  cmd = { "NvimTreeToggle" },
   config = function ()
     local function my_on_attach(bufnr)
       local api = require "nvim-tree.api"
@@ -30,10 +30,6 @@ return {
       vim.keymap.set('n', 'd', api.fs.trash, opts('Trash'))
       vim.keymap.set('n', 'D', api.fs.remove, opts('Delete'))
     end
-
-    -- disable netrw at the very start of your init.lua
-    vim.g.loaded_netrw = 1
-    vim.g.loaded_netrwPlugin = 1
 
     require("nvim-tree").setup {
       on_attach = my_on_attach,
