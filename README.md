@@ -156,3 +156,41 @@ Info:
 
 Info:
 - This config using [folke/lazy.nvim](https://github.com/folke/lazy.nvim) plugin manager.
+
+## List Plugins
+List plugins used in this config
+
+| Name  | Description |
+| ------------- | ------------- |
+| [folke/lazy.nvim](https://github.com/folke/lazy.nvim) | A modern plugin manager for Neovim |
+| [goolord/alpha-nvim](https://github.com/goolord/alpha-nvim) | A lua powered greeter like vim-startify / dashboard-nvim |
+| [windwp/nvim-autopairs](https://github.com/windwp/nvim-autopairs) | autopairs for neovim written in lua |
+| [akinsho/bufferline.nvim](https://github.com/akinsho/bufferline.nvim) | A snazzy bufferline for Neovim |
+| [hrsh7th/nvim-cmp](https://github.com/hrsh7th/nvim-cmp) | A completion plugin for neovim coded in Lua |
+| [hrsh7th/cmp-buffer](https://github.com/hrsh7th/cmp-buffer) | nvim-cmp source for buffer words |
+| [hrsh7th/cmp-path](https://github.com/hrsh7th/cmp-path) | nvim-cmp source for path |
+| [saadparwaiz1/cmp_luasnip](https://github.com/saadparwaiz1/cmp_luasnip) | luasnip completion source for nvim-cmp |
+| [hrsh7th/cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp) | nvim-cmp source for neovim builtin LSP client |
+| [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip) | Snippet Engine for Neovim written in Lua |
+| [rafamadriz/friendly-snippets](https://github.com/rafamadriz/friendly-snippets) | Set of preconfigured snippets for different languages |
+| [folke/tokyonight.nvim](https://github.com/folke/tokyonight.nvim) | A clean, dark Neovim theme |
+| [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim) | Smart and powerful comment plugin |
+| [JoosepAlviste/nvim-ts-context-commentstring](https://github.com/JoosepAlviste/nvim-ts-context-commentstring) | Neovim treesitter plugin for setting the commentstring based on the cursor location in a file |
+| [lewis6991/gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim) | Git integration for buffers |
+| [lukas-reineke/indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim) | Indent guides for Neovim |
+| [neovim/nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) | Quickstart configs for Nvim LSP |
+| [williamboman/mason.nvim](https://github.com/williamboman/mason.nvim) | Easily install and manage LSP servers, DAP servers, linters, and formatters |
+| [williamboman/mason-lspconfig.nvim](https://github.com/williamboman/mason-lspconfig.nvim) | Extension to mason.nvim that makes it easier to use lspconfig with mason.nvim |
+| [nvim-lualine/lualine.nvim](https://github.com/nvim-lualine/lualine.nvim) | A blazing fast and easy to configure neovim statusline plugin |
+| [rcarriga/nvim-notify](https://github.com/rcarriga/nvim-notify) | A fancy, configurable, notification manager for NeoVim |
+| [kevinhwang91/nvim-ufo](https://github.com/kevinhwang91/nvim-ufo) | ultra fold in Neovim |
+| [kevinhwang91/promise-async](https://github.com/kevinhwang91/promise-async) | Promise & Async in Lua |
+| [luukvbaal/statuscol.nvim](https://github.com/luukvbaal/statuscol.nvim) | Status column plugin that provides a configurable 'statuscolumn' and click handlers |
+| [nvim-tree/nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua) | A file explorer tree for neovim written in lua |
+| [nvim-telescope/telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) | Find, Filter, Preview, Pick. All lua, all the time |
+| [nvim-lua/plenary.nvim](https://github.com/nvim-lua/plenary.nvim) | plenary: full; complete; entire; absolute; unqualified. All the lua functions I don't want to write twice |
+| [nvim-telescope/telescope-fzf-native.nvim](https://github.com/nvim-telescope/telescope-fzf-native.nvim) | FZF sorter for telescope written in c |
+| [akinsho/toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim) | A neovim lua plugin to help easily manage multiple terminal windows |
+| [nvim-treesitter/nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) | Nvim Treesitter configurations and abstraction layer |
+| [nvim-tree/nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons) | lua `fork` of vim-web-devicons for neovim |
+| [folke/which-key.nvim](https://github.com/folke/which-key.nvim) | Displays a popup with possible keybindings of the command you started typing |
