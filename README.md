@@ -142,6 +142,7 @@ Info:
 | `<leader>lk` | Prev diagnostic (in current buffer) | Normal |
 | `<leader>lt` | Toggle diagnostic (show and hide diagnostic, but in lualine still to show) | Normal |
 
+### Plugins
 | Key | Description | Mode |
 | --- | --- | --- |
 | `<leader>zh` | List plugins | Normal |
