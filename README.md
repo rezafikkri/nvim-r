@@ -120,3 +120,9 @@ Info:
 | `<leader>ba` | Close all buffers | Normal |
 | `<leader>bn` | Move current buffer to next | Normal |
 | `<leader>bp` | Move current buffer to prev | Normal |
+
+### Teloscope
+| Key | Description | Mode |
+| --- | --- | --- |
+| `<leader>ff` | Find files | Normal |
+| `<leader>fg` | Live grap (search for a string in your current working directory and get results live as you type.) | Normal |
