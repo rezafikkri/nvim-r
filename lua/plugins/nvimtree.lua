@@ -12,7 +12,6 @@ local icons = {
 
 return {
   "nvim-tree/nvim-tree.lua",
-  -- event = "VeryLazy",
   lazy = true,
   cmd = { "NvimTreeToggle" },
   config = function ()
