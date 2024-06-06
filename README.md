@@ -194,3 +194,15 @@ List plugins used in this config
 | [nvim-treesitter/nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) | Nvim Treesitter configurations and abstraction layer |
 | [nvim-tree/nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons) | lua `fork` of vim-web-devicons for neovim |
 | [folke/which-key.nvim](https://github.com/folke/which-key.nvim) | Displays a popup with possible keybindings of the command you started typing |
+
+## Thanks To
+Tutorial
+- https://martinlwx.github.io/en/config-neovim-from-scratch
+- https://learnxinyminutes.com/docs/lua
+
+Pre-configured Neovim
+- https://github.com/pojokcodeid/nvim-lazy
+- https://github.com/VonHeikemen/nvim-starter
+- https://www.lazyvim.org
+- https://www.lunarvim.org
+- https://github.com/LunarVim/Neovim-from-scratch
