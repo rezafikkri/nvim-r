@@ -1,7 +1,7 @@
 return {
   'akinsho/bufferline.nvim',
   dependencies = { 'moll/vim-bbye' },
-  event = {'BufReadPre', 'BufNewFile'},
+  event = { "BufRead", "BufNewFile" },
   config = function ()
     require("bufferline").setup {
       options = {

@@ -64,8 +64,7 @@ return {
         update_root = { enable = true },
       },
       filters = {
-        custom = { "node_modules", "\\.git" },
-        exclude = { ".gitignore" },
+        custom = { "node_modules" },
       },
     }
   end

@@ -9,7 +9,7 @@ return {
   {
     "neovim/nvim-lspconfig",
     lazy = true,
-    event = {"BufReadPre", "BufNewFile"},
+    event = "BufRead",
     cmd = {
       "LspInfo",
       "LspInstall",

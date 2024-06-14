@@ -7,7 +7,8 @@ local icons = {
 
 return {
   "lewis6991/gitsigns.nvim",
-  event = { "BufReadPre", "BufNewFile" },
+  event = "BufRead",
+  enabled = vim.fn.executable("git") == 1,
   config = function ()
     require('gitsigns').setup {
       attach_to_untracked = true,
