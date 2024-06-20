@@ -65,6 +65,7 @@ return {
         end,
         "󰆄 Coment line",
       },
+      r = { "<cmd>lua require('gitsigns').refresh()<cr>", " Refresh Gitsigns" },
 
       b = {
         name = "  Buffers",
