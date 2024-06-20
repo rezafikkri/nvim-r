@@ -13,36 +13,11 @@ return {
     require('gitsigns').setup {
       attach_to_untracked = true,
       signs = {
-        add = {
-          hl = "GitSignsAdd",
-          text = icons.ui.BoldLineLeft,
-          numhl = "GitSignsAddNr",
-          linehl = "GitSignsAddLn",
-        },
-        change = {
-          hl = "GitSignsChange",
-          text = icons.ui.BoldLineLeft,
-          numhl = "GitSignsChangeNr",
-          linehl = "GitSignsChangeLn",
-        },
-        delete = {
-          hl = "GitSignsDelete",
-          text = icons.ui.Triangle,
-          numhl = "GitSignsDeleteNr",
-          linehl = "GitSignsDeleteLn",
-        },
-        topdelete = {
-          hl = "GitSignsDelete",
-          text = icons.ui.Triangle,
-          numhl = "GitSignsDeleteNr",
-          linehl = "GitSignsDeleteLn",
-        },
-        changedelete = {
-          hl = "GitSignsChange",
-          text = icons.ui.BoldLineLeft,
-          numhl = "GitSignsChangeNr",
-          linehl = "GitSignsChangeLn",
-        },
+        add = { text = icons.ui.BoldLineLeft },
+        change = { text = icons.ui.BoldLineLeft },
+        delete = { text = icons.ui.Triangle },
+        topdelete = { text = icons.ui.Triangle },
+        changedelete = { text = icons.ui.BoldLineLeft },
       },
     }
   end
