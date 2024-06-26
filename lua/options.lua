@@ -28,3 +28,6 @@ vim.opt.wrap = true                                     -- display lines as one 
 vim.opt.hlsearch = true                                 -- highlight all matches on previous search pattern
 vim.opt.ignorecase = true                               -- ignore case in searches by default
 vim.opt.smartcase = true                                -- but make it case sensitive if an uppercase is entered
+
+-- editing
+vim.bo.commentstring = '//%s'                           -- enbale commentstring
