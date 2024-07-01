@@ -24,11 +24,6 @@ require("lazy").setup({
     -- The backdrop opacity. 0 is fully opaque, 100 is fully transparent.
     backdrop = 90,
   },
-  checker = {
-    -- automatically check for plugin updates
-    enabled = true,
-    concurrency = 1,
-  },
   change_detection = {
     -- automatically check for config file changes and reload the ui
     enabled = false,
