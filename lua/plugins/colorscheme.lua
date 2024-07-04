@@ -14,6 +14,9 @@ return {
           bg = c.none,
           fg = c.yellow,
         }
+        hl.NvimTreeIndentMarker = {
+          fg = "#3b4261",
+        }
       end
     })
   end
