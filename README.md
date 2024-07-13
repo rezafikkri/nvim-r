@@ -157,6 +157,12 @@ Info:
 Info:
 - This config using [folke/lazy.nvim](https://github.com/folke/lazy.nvim) plugin manager.
 
+### Which key
+| Key | Description | Mode |
+| --- | --- | --- |
+| `<C-d>` | Scroll down popup | Inside popup |
+| `<C-u>` | Scroll up popup | Inside popup |
+
 ## List Plugins
 List plugins used in this config
 
