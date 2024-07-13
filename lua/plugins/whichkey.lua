@@ -9,12 +9,22 @@ end
 return {
   "folke/which-key.nvim",
   lazy = true,
-  keys = { "<leader>" },
+  keys = {
+    {
+      "<leader>?",
+      function()
+        require("which-key").show({ global = false })
+      end,
+      desc = "Buffer Local Keymaps (which-key)",
+    },
+  },
   event = "VeryLazy",
+  dependencies = { 'echasnovski/mini.icons', version = false },
   config = function()
     local which_key = require("which-key")
     -- Setup which-key
     which_key.setup {
+      preset = "modern",
       plugins = {
         marks = false, -- shows a list of your marks on ' and `
         registers = false, -- shows your registers on " in NORMAL or <C-r> in INSERT mode
@@ -30,13 +40,9 @@ return {
           g = false, -- bindings for prefixed with g
         },
       },
-      window = {
-        border = "rounded", -- none, single, double, shadow
-        margin = { 1, 1, 1, 1 }, -- extra window margin [top, right, bottom, left]
-      },
       -- Disabled by default for Telescope
       disable = {
-        filetypes = { "TelescopePrompt" },
+        ft = { "TelescopePrompt" },
       },
       triggers_blacklist = {
         -- list of mode / prefixes that should never be hooked by WhichKey
@@ -47,67 +53,81 @@ return {
       },
     }
 
-    -- Register mappings
-    which_key.register({
-      w = { "<cmd>w<cr>", "󰆓 Save" },
-      q = { "<cmd>q<cr>", "󰿅 Quit" },
-      h = { "<cmd>nohlsearch<cr>", "󱪿 No Highlight" },
-      e = { "<cmd>NvimTreeToggle<cr>", "󰙅 Explorer" },
-      c = { "<cmd>Bdelete<cr>", "󰛉 Close current buffer" },
-      n = {
-        "<cmd>lua require('notify').dismiss({ silent = true, pending = true })<cr>",
-        "󱒼 Close all notifications",
-      },
-      g = { "<cmd>lua _lazygit_toggle()<CR>", " Lazygit" },
-      t = {
+    which_key.add({
+      { "<leader>/",
         function()
           require("Comment.api").toggle.linewise.current()
         end,
-        "󰆄 Coment line",
+        desc = "Comment line",
+        icon = "󰆄",
       },
-      r = { "<cmd>lua require('gitsigns').refresh()<cr>", " Refresh Gitsigns" },
-
-      b = {
-        name = "  Buffers",
-        a = { ":bufdo :Bdelete<cr>", "Close all buffers" },
-        n = { "<cmd>BufferLineMoveNext<cr>", "Move current buffer to next" },
-        p = { "<cmd>BufferLineMovePrev<cr>", "Move current buffer to prev" },
+      {
+        "<leader>/",
+        function ()
+          local api = require('Comment.api')
+          local esc = vim.api.nvim_replace_termcodes(
+            '<ESC>', true, false, true
+          )
+          vim.api.nvim_feedkeys(esc, 'nx', false)
+          api.toggle.linewise(vim.fn.visualmode())
+        end,
+        desc = "Commet Block",
+        icon = "󰆈",
+        mode = "v",
       },
-
-      l = {
-        name = "  LSP",
-        i = { "<cmd>LspInfo<cr>", "Info" },
-        I = { "<cmd>Mason<cr>", "Installer Info" },
-        j = { "<cmd>lua vim.diagnostic.goto_next()<cr>", "Next Diagnostic" },
-        k = { "<cmd>lua vim.diagnostic.goto_prev()<cr>", "Prev Diagnostic" },
-        t = { "<cmd>DiagnosticsToggle<cr>", "Toggle Diagnostic" },
-        d = {
+      { "<leader>w", "<cmd>w<cr>", desc = "Save", icon = "󰆓" },
+      { "<leader>q", "<cmd>q<cr>", desc = "Quit" },
+      { "<leader>h", "<cmd>nohlsearch<cr>", desc = "No Highlight", icon = "󱪿" },
+      { "<leader>e", "<cmd>NvimTreeToggle<cr>", desc = "Explorer", icon = "󰙅" },
+      { "<leader>c", "<cmd>Bdelete<cr>", desc = "Close current buffer", icon = "󰛉" },
+      {
+        "<leader>n",
+        "<cmd>lua require('notify').dismiss({ silent = true, pending = true })<cr>",
+        desc = "Close all notifications",
+        icon = "󱒼",
+      },
+      { "<leader>g", "<cmd>lua _lazygit_toggle()<CR>", desc = "Lazygit", icon = "" },
+      { "<leader>r", "<cmd>lua require('gitsigns').refresh()<cr>", desc = "Refresh Gitsigns", icon = "" },
+      {
+        { "<leader>b", group = "Buffers", icon = " " },
+        { "<leader>ba", ":bufdo :Bdelete<cr>", desc = "Close all buffers" },
+        { "<leader>bn", "<cmd>BufferLineMoveNext<cr>", desc = "Move current buffer to next" },
+        { "<leader>bp", "<cmd>BufferLineMovePrev<cr>", desc = "Move current buffer to prev" },
+      },
+      {
+        { "<leader>l", group = "LSP", icon = "" },
+        { "<leader>li", "<cmd>LspInfo<cr>", desc = "Info" },
+        { "<leader>lI", "<cmd>Mason<cr>", desc = "Installer Info" },
+        { "<leader>lj", "<cmd>lua vim.diagnostic.goto_next()<cr>", desc = "Next Diagnostic" },
+        { "<leader>lk", "<cmd>lua vim.diagnostic.goto_prev()<cr>", desc = "Prev Diagnostic" },
+        { "<leader>lt", "<cmd>DiagnosticsToggle<cr>", desc = "Toggle Diagnostic" },
+        {
+          "<leader>ld",
           "<cmd>Telescope diagnostics bufnr=0<cr>",
-          "Document Diagnostics",
+          desc = "Document Diagnostics",
         },
-        w = {
+        {
+          "<leader>lw",
           "<cmd>Telescope diagnostics<cr>",
-          "Workspace Diagnostics",
+          desc = "Workspace Diagnostics",
         },
       },
-
-      z = {
-        name = " 󱑠 Plugins(Lazy)",
-        h = { "<cmd>Lazy home<cr>", "List" },
-        i = { "<cmd>Lazy install<cr>", "Install" },
-        s = { "<cmd>Lazy sync<cr>", "Sync" },
-        x = { "<cmd>Lazy clean<cr>", "Clean" },
-        u = { "<cmd>Lazy update<cr>", "Update" },
-        p = { "<cmd>Lazy profile<cr>", "Profile" },
-        l = { "<cmd>Lazy log<cr>", "Log" },
-        d = { "<cmd>Lazy debug<cr>", "Debug" },
+      {
+        { "<leader>z", group = "Plugins(Lazy)" },
+        { "<leader>zh", "<cmd>Lazy home<cr>", desc = "List" },
+        { "<leader>zi", "<cmd>Lazy install<cr>", desc = "Install" },
+        { "<leader>zs", "<cmd>Lazy sync<cr>", desc = "Sync" },
+        { "<leader>zx", "<cmd>Lazy clean<cr>", desc = "Clean" },
+        { "<leader>zu", "<cmd>Lazy update<cr>", desc = "Update" },
+        { "<leader>zp", "<cmd>Lazy profile<cr>", desc = "Profile" },
+        { "<leader>zl", "<cmd>Lazy log<cr>", desc = "Log" },
+        { "<leader>zd", "<cmd>Lazy debug<cr>", desc = "Debug" },
       },
-
-      f = {
-        name = " 󰭎 Telescope",
-        f = { "<cmd>Telescope find_files<cr>", "Find files" },
-        g = { "<cmd>Telescope live_grep<cr>", "Live grap" },
-      }
-    }, { prefix = "<leader>" })
+      {
+        { "<leader>f", group = "Telescope" },
+        { "<leader>ff", "<cmd>Telescope find_files<cr>", desc = "Find files" },
+        { "<leader>fg", "<cmd>Telescope live_grep<cr>", desc = "Live grap" },
+      },
+    })
   end
 }
