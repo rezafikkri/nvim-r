@@ -40,6 +40,9 @@ return {
           g = false, -- bindings for prefixed with g
         },
       },
+      win = {
+        no_overlap = false,
+      },
       -- Disabled by default for Telescope
       disable = {
         ft = { "TelescopePrompt" },
