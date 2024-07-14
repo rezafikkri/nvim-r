@@ -25,34 +25,11 @@ return {
     -- Setup which-key
     which_key.setup {
       preset = "modern",
-      plugins = {
-        marks = false, -- shows a list of your marks on ' and `
-        registers = false, -- shows your registers on " in NORMAL or <C-r> in INSERT mode
-        -- the presets plugin, adds help for a bunch of default keybindings in Neovim
-        -- No actual key bindings are created
-        presets = {
-          operators = false, -- adds help for operators like d, y, ...
-          motions = false, -- adds help for motions
-          text_objects = false, -- help for text objects triggered after entering an operator
-          windows = false, -- default bindings on <c-w>
-          nav = false, -- misc bindings to work with windows
-          z = false, -- bindings for folds, spelling and others prefixed with z
-          g = false, -- bindings for prefixed with g
-        },
-      },
       win = {
         no_overlap = false,
       },
-      -- Disabled by default for Telescope
       disable = {
         ft = { "TelescopePrompt" },
-      },
-      triggers_blacklist = {
-        -- list of mode / prefixes that should never be hooked by WhichKey
-        -- this is mostly relevant for keymaps that start with a native binding
-        n = { "g", "z" },
-        i = { "j", "k" },
-        v = { "j", "k" },
       },
     }
 
