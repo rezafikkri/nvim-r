@@ -3,8 +3,8 @@
 <div align="center" style="margin-bottom: 10px">
   <img alt="Neovim" src="https://img.shields.io/badge/NeoVim-%2357A143.svg?&style=for-the-badge&logo=neovim&logoColor=white"/>
   <img alt="Lua" src="https://img.shields.io/badge/lua-%232C2D72.svg?style=for-the-badge&logo=lua&logoColor=white"/>
-  <a href="https://github.com/rezafikkri/Nvim-R">
-    <img alt="Repo Size" src="https://img.shields.io/github/repo-size/rezafikkri/Nvim-R?color=%23DDB6F2&label=SIZE&logo=codesandbox&style=for-the-badge&logoColor=D9E0EE&labelColor=302D41" />
+  <a href="https://github.com/rezafikkri/nvim-r">
+    <img alt="Repo Size" src="https://img.shields.io/github/repo-size/rezafikkri/nvim-r?color=%23DDB6F2&label=SIZE&logo=codesandbox&style=for-the-badge&logoColor=D9E0EE&labelColor=302D41" />
   </a>
 </div>
 
@@ -30,7 +30,7 @@ mv ~/.local/share/nvim ~/.local/share/nvim.bak
 ```
 - Clone nvim-r
 ```bash
-git clone https://github.com/rezafikkri/Nvim-R.git ~/.config/nvim
+git clone https://github.com/rezafikkri/nvim-r.git ~/.config/nvim
 ```
 - Remove `.git` folder
 ```bash
