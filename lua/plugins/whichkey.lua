@@ -9,15 +9,6 @@ end
 return {
   "folke/which-key.nvim",
   lazy = true,
-  keys = {
-    {
-      "<leader>?",
-      function()
-        require("which-key").show({ global = false })
-      end,
-      desc = "Buffer Local Keymaps (which-key)",
-    },
-  },
   event = "VeryLazy",
   dependencies = { 'echasnovski/mini.icons', version = false },
   config = function()
@@ -26,7 +17,8 @@ return {
     which_key.setup {
       preset = "modern",
       win = {
-        no_overlap = false,
+        -- don't allow the popup to overlap with the cursor
+        no_overlap = true,
       },
       disable = {
         ft = { "TelescopePrompt" },
