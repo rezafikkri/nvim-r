@@ -18,7 +18,7 @@ return {
       preset = "modern",
       win = {
         -- don't allow the popup to overlap with the cursor
-        no_overlap = true,
+        no_overlap = false,
       },
       disable = {
         ft = { "TelescopePrompt" },
