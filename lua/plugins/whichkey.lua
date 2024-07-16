@@ -16,6 +16,7 @@ return {
     -- Setup which-key
     which_key.setup {
       preset = "modern",
+      delay = 400,
       win = {
         -- don't allow the popup to overlap with the cursor
         no_overlap = false,
