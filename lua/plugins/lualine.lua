@@ -71,6 +71,7 @@ return {
   'nvim-lualine/lualine.nvim',
   event = { "BufReadPre", "BufNewFile" },
   config = function ()
+    local lsp_progress = require("lsp-progress").progress;
     require("lualine").setup {
       options = {
         theme = "tokyonight",
@@ -122,6 +123,7 @@ return {
             },
           },
           lsp_info,
+          lsp_progress,
           spaces,
           "filetype",
         },
