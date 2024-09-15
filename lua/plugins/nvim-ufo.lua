@@ -35,5 +35,20 @@ return {
         return {'treesitter', 'indent'}
       end
     })
+
+    vim.api.nvim_create_autocmd("FileType", {
+      pattern = {
+        "NvimTree",
+        "lazy",
+        "mason",
+        "neotest-summary",
+        "neotest-output-panel"
+      },
+      callback = function()
+        require("ufo").detach()
+        vim.opt.foldenable = false
+        vim.opt.signcolumn = 'no'
+      end,
+    })
   end
 }
