@@ -19,6 +19,7 @@
 - C compiler and libstdc++ for `nvim-treesitter`. See [here](https://github.com/nvim-treesitter/nvim-treesitter#requirements) for more info
 - [luarocks](https://luarocks.org/) for lazy.nvim to install rockspecs. You can remove rockspec from opts.pkg.sources to disable this feature, in lazy_plug.lua file
 - [BurntSushi/ripgrep](https://github.com/BurntSushi/ripgrep) is required for telescope.nvim live_grep and grep_string and is the first priority for find_files
+- Clipboard tool, ex. xclip, xsel (for linux), run `:help clipboard` to detail of Clipboard tool.
 - [Lazygit](https://github.com/jesseduffield/lazygit) to enable `<leader>g` to launch lazygit **(optional)**
 - [sharkdp/fd](https://github.com/sharkdp/fd) finder for telescope.nvim **(optional)**
 
