@@ -68,10 +68,7 @@ return {
           require("lspconfig")[server_name].setup(opts)
         end,
       }
-
-      -- manual setup lsp
-      require("lspconfig").ts_ls.setup {}
-    end
+     end
   },
   {
     "williamboman/mason.nvim",
