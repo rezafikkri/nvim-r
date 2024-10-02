@@ -22,9 +22,9 @@
 - Clipboard tool, ex. xclip, xsel (for linux), run `:help clipboard` to detail of Clipboard tool.
 - [Lazygit](https://github.com/jesseduffield/lazygit) to enable `<leader>g` to launch lazygit **(optional)**
 - [sharkdp/fd](https://github.com/sharkdp/fd) finder for telescope.nvim **(optional)**
-- Install [Node.js](https://nodejs.org/en/download/package-manager/), [typescript-language-server lsp](https://github.com/typescript-language-server/typescript-language-server) and TypeScript. To install typescript-language-server and TypeScript using this command:
+- Install [Node.js](https://nodejs.org/en/download/package-manager/) and TypeScript. To install TypeScript using this command:
 ```bash
-npm install -g typescript-language-server typescript
+npm install -g typescript
 ```
 
 ## Install
