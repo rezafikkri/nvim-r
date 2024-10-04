@@ -15,6 +15,9 @@ return {
       "LspInstall",
       "LspUninstall",
     },
+    dependencies = {
+      "b0o/schemastore.nvim",
+    },
     config = function()
       local sign = function(opts)
         -- See :help sign_define()
