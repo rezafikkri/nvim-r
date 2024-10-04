@@ -26,6 +26,7 @@
 ```bash
 npm install -g typescript
 ```
+- For linux, you need to install `libglib2.0-dev`.
 
 ## Install
 - Remove old config or make backup
