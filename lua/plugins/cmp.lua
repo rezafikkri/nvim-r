@@ -62,6 +62,17 @@ return {
     -- Use existing VS Code style snippets from a plugin (ex. rafamadriz/friendly-snippets)
     require('luasnip.loaders.from_vscode').lazy_load()
 
+    -- add custom snippet
+    local s = luasnip.snippet;
+    local t = luasnip.text_node;
+    local i = luasnip.insert_node;
+    luasnip.add_snippets('php', {
+      s('phpp', {
+        -- <?= ?>
+        t('<?= '), i(1, 'text'), t(' ?>'),
+      }),
+    });
+
     -- Add keymap for unlink current jumpable luasnip
     vim.api.nvim_set_keymap('i', "<C-l>", "<cmd>lua require('luasnip').unlink_current()<cr>", {
       noremap = true,
