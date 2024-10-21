@@ -22,11 +22,12 @@
 - Clipboard tool, ex. xclip, xsel (for linux), run `:help clipboard` to detail of Clipboard tool.
 - [Lazygit](https://github.com/jesseduffield/lazygit) to enable `<leader>g` to launch lazygit **(optional)**
 - [sharkdp/fd](https://github.com/sharkdp/fd) finder for telescope.nvim **(optional)**
-- Install [Node.js](https://nodejs.org/en/download/package-manager/) and TypeScript. To install TypeScript using this command:
+- [Node.js](https://nodejs.org/en/download/package-manager/) and TypeScript. To install TypeScript using this command:
 ```bash
 npm install -g typescript
 ```
 - For linux, you need to install `libglib2.0-dev`.
+- [Universal-Ctags](https://github.com/universal-ctags/ctags)
 
 ## Install
 - Remove old config or make backup
@@ -168,6 +169,11 @@ Info:
 Info:
 - This config using [folke/lazy.nvim](https://github.com/folke/lazy.nvim) plugin manager.
 
+### Tagbar
+| Key | Description | Mode |
+| --- | --- | --- |
+| `<C-t>` | Toggle Tagbar | Normal |
+
 ## List Plugins
 List plugins used in this config
 
@@ -205,6 +211,7 @@ List plugins used in this config
 | [nvim-treesitter/nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) | Nvim Treesitter configurations and abstraction layer |
 | [nvim-tree/nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons) | lua `fork` of vim-web-devicons for neovim |
 | [folke/which-key.nvim](https://github.com/folke/which-key.nvim) | Displays a popup with possible keybindings of the command you started typing |
+| [preservim/tagbar](https://github.com/preservim/tagbar) | Displays tags in a window, ordered by scope |
 
 ## Thanks To
 Tutorial
