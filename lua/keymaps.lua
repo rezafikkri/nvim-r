@@ -41,6 +41,9 @@ keymap("n", "<A-k>", ":m .-2<CR>==", opts('Move text to up'))
 keymap("n", "\\]", "<cmd>BufferLineCycleNext<cr>", opts('Navigate to next buffer'))
 keymap("n", "\\[", "<cmd>BufferLineCyclePrev<cr>", opts('Navigate to prev buffer'))
 
+-- Toggle Tagbar
+keymap("n", "<C-t>", "<cmd>TagbarToggle<cr>", opts('Toggle Tagbar'))
+
 -----------------
 -- Visual mode --
 -----------------
