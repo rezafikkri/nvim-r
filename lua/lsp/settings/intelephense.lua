@@ -1,7 +1,7 @@
 return {
   settings = {
     intelephense = {
-      diagnostics = { undefinedMethods = false },
+      diagnostics = { undefinedMethods = false, undefinedProperties = false },
     },
   },
 }
