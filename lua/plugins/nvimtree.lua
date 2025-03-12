@@ -66,6 +66,9 @@ return {
       filters = {
         custom = { "node_modules" },
       },
+      git = {
+        timeout = 1000,
+      },
     }
   end
 }
