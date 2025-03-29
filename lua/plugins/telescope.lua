@@ -8,7 +8,7 @@ return {
   config = function ()
     require("telescope").setup {
       defaults = {
-        file_ignore_patterns = { ".git/" },
+        file_ignore_patterns = { ".git/", "^prisma%-%w+%-db/" },
         prompt_prefix = "   ",
 				selection_caret = " ",
 				entry_prefix = "  ",
